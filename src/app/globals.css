@@ -17,11 +17,39 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  @apply bg-slate-50 text-gray-900;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+
+
+/* Modal.css
+
+
+/* styles/globals.css */
+.custom-overlay {
+  background-color: rgba(192, 192, 192, 0.5);
+  /* Cinza claro com opacidade 0.5 */
+  backdrop-filter: blur(4px);
+  /* Efeito de desfoque */
+  /* Outros estilos para o overlay, se necessário */
 }
