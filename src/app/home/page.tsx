@@ -27,7 +27,7 @@ const Home = () => {
                     >
                         <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
                     </Player>
-                    <h1 className="font-black text-xl">Olá, {UserData.nome}</h1>
+                    <h1 className="font-black text-xl">Olá, Universitario</h1>
                     <p className="font-semibold text-lg">Sejá bem vindo ao mural, basta clicar no botão para entrar no grupo.</p>
                     <button className="mt-4 rounded-md h-[50px] w-[200px] bg-[#00ade9]">
                         <Player
