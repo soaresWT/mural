@@ -1,6 +1,6 @@
 import Menu from './components/Menu'
-import Vector from '../../public/Vector.png'
-
+import { Card } from './components/Card'
+import { Footer } from './components/Footer'
 
 export default function Home() {
 
@@ -9,19 +9,36 @@ export default function Home() {
       <Menu />
       <section className="h-auto w-screen p-0 m-0 flex flex-col items-center justify-center">
         <h1 className='text-[#0052FE] text-center p-3 mt-8 text-[3em] font-bold'> O que é o mural?</h1>
-        <div className="bg-pink-300 bg-opacity-60 backdrop-blur-sm flex rounded-[15px] items-center flex-col w-2/5 min-w-[250px] h-3/5 min-h-[400px] mt-8 shadow-lg">
-          <div className='bg-[#0052FE] rounded-t-[15px] flex p-2 items-center w-full'>oi</div>
-          <p>Conteúdo da primeira div...</p>
-        </div>
-        <div className="bg-pink-300 bg-opacity-60 backdrop-blur-sm flex rounded-[15px] items-center flex-col w-2/5 min-w-[250px] h-3/5 min-h-[400px] mt-8 shadow-lg">
-          <div className='bg-[#0052FE] rounded-t-[15px] flex p-2 items-center w-full'>oi</div>
-          <p>Conteúdo da primeira div...</p>
-        </div>
-        <div className="bg-pink-300 bg-opacity-60 backdrop-blur-sm flex rounded-[15px] items-center flex-col w-2/5 min-w-[250px] h-3/5 min-h-[400px] mt-8 shadow-lg">
-          <div className='bg-[#0052FE] rounded-t-[15px] flex p-2 items-center w-full'>oi</div>
-          <p>Conteúdo da primeira div...</p>
-        </div>
+        <Card headerText="Contexto">
+          <p>O estágio é uma etapa fundamental para a
+            conclusão dos cursos da UFC, é bastante
+            comum que empresas busquem discentes para
+            preencher suas vagas através destes estágios.</p> <br />
+          <p>O Campus de Quixadá recebe uma grande
+            quantidade de vagas de estágio de diversas
+            empresas todo mês para diversas áreas em
+            Tecnologia da Informação.</p>
+        </Card>
+        <Card headerText="Problema">
+          <p>As vagas chegam por caminhos variados e a
+            divulgação não é controlada ou organizada,
+            professores e alunos possuem vagas a serem
+            enviadas mas muitas vezes não sabem com quem
+            falar ou como alcançar os alunos.</p> <br />
+          <p>Alunos buscam vagas de estágio mas não sabem
+            onde encontrá-las ou com quem falar para
+            descobrir se há oportunidades disponíveis.</p>
+        </Card>
+        <Card headerText="Objetivo">
+          <p>O principal objetivo é que os alunos consigam
+            ver as vagas em um só lugar e que não se
+            sintam mais perdidos procurando por elas,
+            garantindo assim um melhor relacionamento
+            com as empresas e facilitando a vida dos
+            alunos que buscam vagas de estágio.</p>
+        </Card>
       </section>
+      <Footer />
     </>
   )
 }

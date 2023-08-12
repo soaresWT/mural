@@ -86,7 +86,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, closeModal }) => {
         >
             <div className='bg-[#0052FE] flex p-2 items-center h-[50px]'>
                 <ArrowBack className='text-white' onClick={closeModal} />
-                <h2 className='text-white m-3 font-semibold text-lg'>Formulário de Inscrição</h2>
+                <h2 className='text-white m-3 font-semibold text-lg'>Inscreva-se com Login SIGAA</h2>
             </div>
 
             {loading ? (<div className="h-full flex items-center justify-center">
@@ -107,7 +107,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, closeModal }) => {
                         <input type="text" id="nome" className="w-full bg-gray-200 px-4 py-2 rounded-md" />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="login" className="block text-left text-gray-700">Matrícula:</label>
+                        <label htmlFor="login" className="block text-left text-gray-700">Login:</label>
                         <input type="text" id="login" value={login} onChange={(e) => setlogin(e.target.value)} className="w-full bg-gray-200 px-4 py-2 rounded-md" />
                     </div>
                     <div className="mb-4">
