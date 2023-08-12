@@ -1,5 +1,4 @@
 import React from 'react';
-import ilustration from '../../../public/Vector.png'
 
 const BackgroundIllustration = () => {
     return (

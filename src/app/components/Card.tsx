@@ -1,9 +1,6 @@
 import React from "react";
+import CardProps from "../types/TypeCard";
 
-interface CardProps {
-    children: React.ReactNode;
-    headerText: string;
-}
 export const Card = ({ children, headerText }: CardProps) => {
     return (
         <div className="bg-pink-100 bg-opacity-60 backdrop-blur-sm flex rounded-[15px] items-center flex-col w-2/5 min-w-[370px] h-1/5 min-h-[310px] mt-8 shadow-lg">
