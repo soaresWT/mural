@@ -1,7 +1,6 @@
 import React from 'react';
 import FormProps from '../types/TypeForm';
 
-
 export const Form: React.FC<FormProps> = ({ handleLogin, login, setlogin, senha, setSenha, error }) => {
     return (
         <form className='p-8' onSubmit={handleLogin}>
